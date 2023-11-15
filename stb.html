@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ttl">
+        <div class="b">
+            <h1>camisa</h1>
+            <button onclick="as()" id="seta">▼</button>
+        </div>
+        <div id="pop" class="hidden">
+            <div class="a">
+                <h2>comissao</h2>
+                <img src="comissão.png" id="cms">
+            </div>
+        </div>
+    </div>
+    <a href="index.html">seta pro lado</a>
+    <style>
+        .ttl {
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            align-items: baseline;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        .b h1{
+            margin-right: 10px;
+        }
+        .b{
+            align-items: center;
+            flex-direction: row;
+            display: flex ;
+        }
+        .a{
+            text-align: center;
+        }
+        #pop {
+            opacity: 0;
+            transition: opacity 2s;
+            align-items: center;
+            flex-direction: row;
+            overflow: hidden; 
+        }
+        #pop.visible {
+            opacity: 1;
+        }
+        #cms {
+            height: 0px;
+            transition: height 2s;
+        }
+        #seta {
+            height: 30px;
+        }
+    </style>
+    <script>
+        function as() {
+            var cms = document.getElementById('cms');
+            var pop = document.getElementById('pop');
+            var st = document.getElementById('seta');
+
+            if (pop.classList.contains('visible')) {
+                pop.classList.remove('visible');
+                cms.style.height = '0';
+                st.innerHTML = '▼';
+            } else {
+                pop.classList.add('visible');
+                cms.style.height = '250px';
+                st.innerHTML = '▲';
+            }
+        }
+    </script>
+</body>
+</html>
