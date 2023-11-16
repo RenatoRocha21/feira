@@ -271,6 +271,7 @@ body{
         margin-left: 5px;
     }
     .cimacll{
+        margin-top: 5%;
         width: 100%;
         height: auto;
         display: flex;
@@ -326,7 +327,6 @@ body{
     }
 
     /*pop-poup celular*/
-    /*POPOUP*/
     button{
         border: none;
         background: none;
