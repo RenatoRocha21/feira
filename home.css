@@ -203,9 +203,6 @@ body{
     .seta {
         height: 20px;
     }
-    #joao .seta{
-        background: black;
-    }
 }
 
 
@@ -326,5 +323,46 @@ body{
     }
     #sidney:hover{
         color:red
+    }
+
+    /*pop-poup celular*/
+    /*POPOUP*/
+    button{
+        border: none;
+        background: none;
+        margin-left: 10px;
+    }
+    .pp{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .pop img{
+        border-radius: 8px
+    }
+    .pop {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 2s, visibility 2s;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    .pop.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .prf {
+        height: 0;
+        transition: height 2s;
+    }
+    
+    .prf.visible {
+        height: 150px;
+    }
+    
+    .seta {
+        height: 20px;
     }
 }
