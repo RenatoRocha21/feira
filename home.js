@@ -72,11 +72,11 @@ function as(pops, imgs, sts) {
 
     if (idiv.classList.contains("visible")) {
         idiv.classList.remove('visible');
-        idmg.style.height = '0';
+        idmg.classList.remove('visible');
         st.innerHTML = '▼';
     } else {
         idiv.classList.add('visible');
-        idmg.style.height = '250px';
+        idmg.classList.add('visible');
         st.innerHTML = '▲';
     }
 }
