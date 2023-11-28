@@ -1,0 +1,179 @@
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 92, 0);
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border: 3px solid rgb(0, 92, 0);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: rgb(0, 92, 0);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*PROFESSORES*/
+
+.navbarprof {
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    flex-flow: row wrap;
+    background: linear-gradient(to right, rgb(0, 92, 0), black);
+    position: fixed;
+    display: flex;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.spc {
+    height: 15%;
+    width: 100%;
+}
+
+.logoprof img {
+    padding: 5px;
+    width: 75px;
+    margin-left: 15px;
+    filter: drop-shadow(1px 2px 3px black);
+}
+
+.totalprof {
+    display: flex;
+    justify-content: left;
+    margin-top: 8%;
+    margin-left: 1%;
+    margin-right: 1%;
+    font-size: 9px;
+    flex-direction: column;
+}
+
+.totalprof a {
+    text-decoration: none;
+    color: rgb(0, 92, 0);
+}
+
+.divprof {
+    background: white;
+    border-radius: 15px;
+    height: 65px;
+    transition: all 2s;
+    box-shadow: rgb(0, 92, 0) 2px 1px 3px;
+    margin-bottom: 15px;
+}
+.divprof.a{
+    background: white;
+    border-radius: 15px;
+    height: auto;
+    transition: all 2s;
+    box-shadow: rgb(0, 92, 0) 2px 1px 3px;
+    margin-bottom: 15px;
+}
+
+.totalprof h1 {
+    text-align: left;
+}
+
+.divprof button:hover {
+    color: red;
+}
+
+.divprof span h2 {
+    font-size: 18px;
+}
+
+/*tabela*/   
+td,th{
+    padding: 5px;
+}
+td {
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+}
+
+tr{
+    background: #ddd;
+}   
+
+th {
+    background-color: #aeb0cd;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+table {
+    overflow: hidden;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vh;
+}
+
+/*POPOUP*/
+button {
+    border: none;
+    background: none;
+    margin-left: 10px;
+}
+
+.pp h1 {
+    margin-left: 10px;
+}
+
+.pp {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.pop img {
+    border-radius: 8px;
+}
+
+.pop {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s, visibility 2s;
+    align-items: center;
+    flex-direction: row;
+}
+
+.row {
+    display: flex;
+    flex-flow: row;
+    padding: 8px;
+}
+
+.pop.visible {
+    flex-direction: row;
+    opacity: 1;
+    visibility: visible;
+}
+
+.prf {
+    height: 0px;
+    transition: height 2s;
+}
+
+.prf.visible {
+    height: 250px;
+}
+
+.seta {
+    height: 20px;
+    color: rgb(0, 92, 0);
+}
