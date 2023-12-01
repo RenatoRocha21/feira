@@ -71,7 +71,7 @@ function nusta() {
     var pops = "nusta-pop";
     var imgs = "nusta-prf";
     var sts = "st-nusta";
-    var divs = "div-ms";
+    var divs = "div-ns";
      as(pops, imgs, sts, divs);
 }
 
