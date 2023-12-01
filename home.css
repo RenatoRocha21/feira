@@ -41,7 +41,9 @@ body {
         align-items: center;
         width: 100%;
     }
-
+    .esq{
+        width: 100%;
+    }
     .menu {
         flex: 70%;
         text-align: right;
