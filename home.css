@@ -173,7 +173,7 @@ body {
     .dp.a {
         background: rgba(181, 194, 220, 0.447);
         padding: 10px;
-        width: 100%;
+        width: 70%;
         font-size: 12px;
         text-align: justify;
         text-justify: inter-word;
@@ -181,8 +181,6 @@ body {
         margin-bottom: 20px;
         border-radius: 12px;
     }
-    
-
     .elementos{
         justify-content: center;
         display: flex;
@@ -365,18 +363,8 @@ body {
         flex-direction: row;
     }
 
-    .esq {
-        font-size: 8px;
-        width: 60%;
-        text-align: justify;
-        text-justify: inter-word;
-    }
-    .dp.a{
-        width: 158.1%;
-    }
-
     .cent {
-    width: 35%;
+    width: 30%;
     flex-direction: column;
     text-align: center;
     align-items: center;
@@ -387,7 +375,7 @@ body {
 }
 
     .cent img {
-    width: 60%;
+    width: 80%;
     border-radius: 10px;
     margin-bottom: 5px;
     padding: 1px;
@@ -480,7 +468,21 @@ body {
     .dp {
         background: rgba(181, 194, 220, 0.447);
         padding: 10px;
-        margin-left: 7px;
+        width: 70%;
+        font-size: 12px;
+        text-align: justify;
+        text-justify: inter-word;
+        transition: height 2s;
+        margin-bottom: 20px;
+        border-radius: 12px;
+    }
+    .dp.a {
+        background: rgba(181, 194, 220, 0.447);
+        padding: 10px;
+        width: 100%;
+        font-size: 12px;
+        text-align: justify;
+        text-justify: inter-word;
         transition: height 2s;
         margin-bottom: 20px;
         border-radius: 12px;
