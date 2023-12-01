@@ -365,20 +365,22 @@ body {
     }
 
     .cent {
-        width: 40%;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        height: 245px;
-        display: flex;
-    }
+    width: 35%;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 35%;
+    display: flex;
+    flex-wrap: wrap;
+}
 
     .cent img {
-        width: 74%;
-        border-radius: 10px;
-        margin-bottom: 5px;
-    }
+    width: 60%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 1px;
+}
 
     .cimacll {
         margin-top: 5%;
